@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 25%;
+    margin: auto;
+    padding-top: 10rem;
+}
+
+.grid-item {
+    padding: 30px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid green;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.zero-item {
+    grid-column: 1 /4;
+}
+
+.display-item {
+    padding: 30px;
+    background-color: black;
+    color: #fff;
+    border: 1px solid green;
+    text-align: center;
+    font-size: 1.5rem;
+    grid-column: 1 / 5;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5rem;
+    cursor: pointer;
+}
